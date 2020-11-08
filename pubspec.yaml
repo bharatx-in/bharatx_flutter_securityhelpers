@@ -1,6 +1,6 @@
 name: bharatx_flutter_securityhelpers
-description: A new flutter plugin project.
-version: 1.0.2-alpha1
+description: Flutter wrapper for securityhelpers from BharatX SDK
+version: 1.0.2-alpha2
 homepage: https://bharatx.tech/
 repository: https://github.com/bharatx-in/bharatx_flutter_securityhelpers
 
