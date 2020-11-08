@@ -1,0 +1,23 @@
+name: bharatx_flutter_securityhelpers_example
+description: Demonstrates how to use the bharatx_flutter_securityhelpers plugin.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bharatx_flutter_securityhelpers:
+    path: ../
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+
+flutter:
+  uses-material-design: true
