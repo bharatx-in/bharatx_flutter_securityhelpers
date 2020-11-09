@@ -1,3 +1,8 @@
+## 1.0.2-release1
+
+* Finalize API Surface
+* Edit version in `android/build.gradle`
+
 ## 1.0.2-alpha2
 
 * Change description of the plugin
