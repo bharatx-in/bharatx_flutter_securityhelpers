@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     try {
       await BharatXSecurityHelpers.storePartnerId("testPartnerId");
       await BharatXSecurityHelpers.storePartnerApiKey("testApiKey");
-      await BharatXSecurityHelpers.storeThemeColorPreference("#000000");
+      await BharatXSecurityHelpers.storeThemeColorPreference(Colors.deepOrange);
     } on PlatformException {
       message = 'Failed to store BharatX preferences';
     }

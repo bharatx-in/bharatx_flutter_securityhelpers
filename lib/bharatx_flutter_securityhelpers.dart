@@ -18,19 +18,19 @@ class BharatXSecurityHelpers {
 
   static Future<void> storeThemeColorPreference(dynamic color) async {
     String colorString = "#00000000";
-    switch (color.runtimeType) {
-      case int:
-        colorString = "#" + color.toRadixString(16);
-        break;
-      case Color:
-        colorString = "#" + color.value.toRadixString(16);
-        break;
-      case String:
-        colorString = color;
-        if (!colorString.startsWith("#")) {
-          colorString = "#" + colorString;
-        }
+    if (color is int) {
+      colorString = "#" + color.toRadixString(16);
+    } else if (color is Color) {
+      colorString = "#" + color.value.toRadixString(16);
+    } else if (color is String) {
+      colorString = color;
+      if (!colorString.startsWith("#")) {
+        colorString = "#$colorString";
+      }
     }
-    await _channel.invokeMethod('storeThemeColorPreference', {"color": color});
+    if (colorString != "#00000000") {
+      await _channel
+          .invokeMethod('storeThemeColorPreference', {"color": colorString});
+    }
   }
 }
