@@ -1,3 +1,7 @@
+## 1.0.2-release2
+
+* Fix theme color storage not working as intended bug
+
 ## 1.0.2-release1
 
 * Finalize API Surface
