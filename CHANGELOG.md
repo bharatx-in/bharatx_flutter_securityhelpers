@@ -1,3 +1,7 @@
+## 1.0.3-release1
+
+* Upgraded securityhelpers Android SDK to 1.0.3
+
 ## 1.0.2-release2
 
 * Fix theme color storage not working as intended bug
